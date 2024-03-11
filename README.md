@@ -1,5 +1,26 @@
 # AngularCarVoteWorkshop
 
+-How was this built?
+
+```
+npm install -g @angular/cli
+ng new first-app --no-standalone
+
+ng generate service cars
+
+ng generate module cars
+ng generate component cars/add
+ng generate component cars/view
+ng generate component cars/list
+ng generate component cars/edit
+
+ng generate module layout
+ng generate component layout/menu
+
+```
+
+## Further Info
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.2.
 
 ## Development server
