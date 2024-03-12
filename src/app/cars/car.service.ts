@@ -6,7 +6,6 @@ import { CARS } from '../data/cars';
   providedIn: 'root',
 })
 export class CarService {
-  private _currentId: number = 1;
   public cars: Car[] = CARS;
   public getCarById(id: number | null): Car | null {
     const car = this.cars.find((car) => car.id === id);
@@ -14,5 +13,11 @@ export class CarService {
       return null;
     }
     return car;
+  }
+  public AddCar(c: Car) {
+    c.id = this.cars.length + 1;
+    this.cars.push(c);
+    console.log(c);
+    console.log(this.cars);
   }
 }
