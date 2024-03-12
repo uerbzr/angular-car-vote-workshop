@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { ListComponent } from './cars/list/list.component';
 import { AddComponent } from './cars/add/add.component';
 import { ViewComponent } from './cars/view/view.component';
-import { EditComponent } from './cars/edit/edit.component';
 
 const routes: Routes = [
   { path: 'cars', component: ListComponent },

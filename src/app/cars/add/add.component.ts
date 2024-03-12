@@ -16,8 +16,10 @@ export class AddComponent {
     this.carForm = this.formBuilder.group({
       make: ['', Validators.required],
       model: ['', Validators.required],
+      description: ['', Validators.required],
     });
   }
+
   addCar() {
     if (this.carForm.valid) {
       const newCar: Car = {
