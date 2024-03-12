@@ -19,6 +19,16 @@ ng generate component layout/menu
 
 ```
 
+## Branch: jsonserver
+
+On this branch you can start:
+
+```
+json-server --watch cars/data/cars.json
+```
+
+and the car.service.ts will connect to the api
+
 ## Further Info
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.2.
