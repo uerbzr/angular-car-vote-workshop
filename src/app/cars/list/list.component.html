@@ -10,7 +10,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let c of cars">
+    <tr *ngFor="let c of cars | async">
       <td>{{ c.id }}</td>
       <td>{{ c.make }}</td>
       <td>{{ c.model }}</td>

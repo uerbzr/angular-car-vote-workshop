@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CarService } from '../car.service';
+import { CarService } from '../services/car.service';
 import { Car } from '../models/car';
 @Component({
   selector: 'app-list',
@@ -8,5 +8,5 @@ import { Car } from '../models/car';
 })
 export class ListComponent {
   constructor(private readonly carService: CarService) {}
-  cars: Car[] = this.carService.cars;
+  cars = this.carService.cars;
 }

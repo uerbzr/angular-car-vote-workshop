@@ -7,10 +7,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { LayoutModule } from '../layout/layout.module';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AddComponent, ViewComponent, ListComponent],
-  imports: [CommonModule, ReactiveFormsModule, RouterModule],
+  imports: [CommonModule, ReactiveFormsModule, RouterModule, HttpClientModule],
   exports: [AddComponent, ViewComponent, ListComponent],
 })
 export class CarsModule {}

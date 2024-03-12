@@ -1,0 +1,40 @@
+{
+  "cars": [
+    {
+      "id": "1",
+      "make": "Mini",
+      "model": "Clubman",
+      "description": "A long version of the Mini"
+    },
+    {
+      "id": "2",
+      "make": "Smart",
+      "model": "ForTwo",
+      "description": "Small car for two people"
+    },
+    {
+      "id": "3",
+      "make": "VW",
+      "model": "Beetle",
+      "description": "A car that looks like an insect"
+    },
+    {
+      "id": "4",
+      "make": "Citroen",
+      "model": "2cv",
+      "description": "Classic French Car"
+    },
+    {
+      "id": "5",
+      "make": "VW",
+      "model": "Camper",
+      "description": "A van that you can sleep in"
+    },
+    {
+      "id": "cf40",
+      "make": "John Deere",
+      "model": "X380",
+      "description": "Small "
+    }
+  ]
+}

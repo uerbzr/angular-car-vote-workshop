@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Car } from '../models/car';
-import { CarService } from '../car.service';
+import { CarService } from '../services/car.service';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -14,5 +14,5 @@ export class ViewComponent {
     private readonly route: ActivatedRoute
   ) {}
   id = this.route.snapshot.paramMap.get('id');
-  car: Car | null = this.carService.getCarById(Number(this.id));
+  car: Car | null = null; // = this.carService.getCarById(Number(this.id));
 }

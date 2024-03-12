@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { CarService } from '../car.service';
+import { CarService } from '../services/car.service';
 import { Car } from '../models/car';
 @Component({
   selector: 'app-add',
@@ -28,7 +28,7 @@ export class AddComponent {
         model: this.carForm.value.model,
         description: this.carForm.value.description,
       };
-      this.carService.AddCar(newCar);
+      this.carService.add(newCar);
       this.carForm.reset();
     }
   }
