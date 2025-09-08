@@ -1,14 +1,14 @@
-# AngularCarVoteWorkshop
+# Angular Car Vote Workshop
 
--How was this built?
+## How was this built?
 
 ```
 npm install -g @angular/cli
 ng new first-app --no-standalone
 
-ng generate service cars
+ng generate module cars 
+ng generate service cars --skip-tests
 
-ng generate module cars
 ng generate component cars/add
 ng generate component cars/view
 ng generate component cars/list
@@ -30,7 +30,6 @@ Order of Build:
 - list component: import car service into here and fill a cars array property with it . Setup constructor correctly
 - create add in service to add to cars array and make id increment
 - create FORM !
--
 
 ## Further Info
 
