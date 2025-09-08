@@ -6,8 +6,8 @@
 npm install -g @angular/cli
 ng new first-app --no-standalone
 
-ng generate module cars 
-ng generate service cars --skip-tests
+ng generate module cars
+ng generate service cars/cars.service --skip-tests
 
 ng generate component cars/add
 ng generate component cars/view
